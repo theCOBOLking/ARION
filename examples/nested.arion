@@ -1,0 +1,10 @@
+!ARION 1.0
+
+.name Joachim
+.profile
+  .role Developer
+  .location Austria
+.skills
+  - Python
+  - Audio
+  - AI
