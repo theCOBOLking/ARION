@@ -66,7 +66,7 @@ Examples:
 
 ```text
 .name Joachim
-.age 37
+.age 29
 .active true
 ```
 
@@ -75,7 +75,7 @@ Equivalent JSON fragment:
 ```json
 {
   "name": "Joachim",
-  "age": 37,
+  "age": 29,
   "active": true
 }
 ```
@@ -176,20 +176,20 @@ ARION uses the following rules to recover JSON types:
 
    ```text
    .flag 'true
-   .value '37
+   .value '29
    .literal 'null
    ```
 
    JSON:
 
    ```json
-   { "flag": "true", "value": "37", "literal": "null" }
+   { "flag": "true", "value": "29", "literal": "null" }
    ```
 
 2. Otherwise, if `raw` is a valid JSON number literal (integer or floating point), it is parsed as a **number**.
 
    ```text
-   .age 37
+   .age 29
    .price -3.14
    ```
 
@@ -209,7 +209,7 @@ ARION uses the following rules to recover JSON types:
    { "title": "Carry Me Through" }
    ```
 
-This scheme ensures that `"true"` vs `true`, `"37"` vs `37`, and `"null"` vs `null` are distinguishable using the leading `'` for forced strings.
+This scheme ensures that `"true"` vs `true`, `"29"` vs `29`, and `"null"` vs `null` are distinguishable using the leading `'` for forced strings.
 
 ---
 
@@ -255,7 +255,7 @@ Any line whose first non-space character is `#` is a comment and MUST be ignored
 !ARION 1.0
 
 .name Joachim
-.age 37
+.age 29
 .active true
 ```
 
@@ -264,7 +264,7 @@ JSON:
 ```json
 {
   "name": "Joachim",
-  "age": 37,
+  "age": 29,
   "active": true
 }
 ```
@@ -283,8 +283,7 @@ JSON:
   - Audio
   - AI
 .bio
-    I am working on SoundSculptor Pro
-    and several AI-driven platforms.
+    I am working on several AI-driven platforms.
     Music and education are my core topics.
 ```
 
